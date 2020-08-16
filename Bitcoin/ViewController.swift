@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var precoBitcoins: UILabel!
     @IBOutlet weak var botaoAtualizar: UIButton!
     
-    
     @IBAction func atualizatBitcoin(_ sender: Any) {
         self.recuperarPrecoBitcoins()
     }
