@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         
         self.botaoAtualizar.setTitle("Atualizando...", for: .normal)
         
+        //Adicionando um comentario de teste aqui
         //Criando uma variavel responsavel pela consulta
         if let url = URL(string: "https://blockchain.info/ticker") {
                    
