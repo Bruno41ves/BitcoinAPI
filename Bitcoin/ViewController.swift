@@ -8,20 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+final class ViewController: UIViewController {
     
     @IBOutlet weak var precoBitcoins: UILabel!
     @IBOutlet weak var botaoAtualizar: UIButton!
     
     @IBAction func atualizatBitcoin(_ sender: Any) {
-        self.recuperarPrecoBitcoins()
+        recuperarPrecoBitcoins()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.recuperarPrecoBitcoins()
+        recuperarPrecoBitcoins()
     }
     
     func formatarPreco(preco: NSNumber) -> String {
@@ -37,7 +35,7 @@ class ViewController: UIViewController {
     
     func recuperarPrecoBitcoins() {
         
-        self.botaoAtualizar.setTitle("Atualizando...", for: .normal)
+        botaoAtualizar.setTitle("Atualizando...", for: .normal)
         
         //Criando uma variavel responsavel pela consulta
         if let url = URL(string: "https://blockchain.info/ticker") {
